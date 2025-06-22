@@ -1,6 +1,6 @@
 {
   "name": "@osdeibi/bucky-seo-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React component for managing meta tags, Open Graph, and dynamic JSON-LD",
   "type": "module",
   "main": "dist/index.js",
@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/osdeibi/bucky-seo-react#readme",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
