@@ -1,0 +1,47 @@
+{
+  "name": "bucky-seo-react",
+  "version": "1.0.0",
+  "description": "React component for managing meta tags, Open Graph, and dynamic JSON-LD",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osdeibi/bucky-seo-react.git"
+  },
+  "keywords": [
+    "seo",
+    "react",
+    "structured",
+    "data",
+    "markup",
+    "google",
+    "opengraph",
+    "metatags",
+    "bucky"
+  ],
+  "author": "Osdeibi Acurero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osdeibi/bucky-seo-react/issues"
+  },
+  "homepage": "https://github.com/osdeibi/bucky-seo-react#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "rollup": "^4.44.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  }
+}
