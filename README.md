@@ -7,7 +7,7 @@ A lightweight, TypeScript-first React utility for managing standard meta tags, O
 ## 📦 Installation
 
 ```bash
-npm install bucky-seo-react
+npm install @osdeibi/bucky-seo-react
 # or local for development:
 npm install ../bucky-seo-react
 ```
@@ -53,8 +53,8 @@ bucky-seo-react works in any React setup that supports ES Modules and can inject
 
    ```tsx
    import React from "react";
-   import { DynamicHead, videoObject } from "bucky-seo-react";
-   import type { MetaTags, StructuredData } from "bucky-seo-react";
+   import { DynamicHead, videoObject } from "@osdeibi/bucky-seo-react";;
+   import type { MetaTags, StructuredData } from "@osdeibi/bucky-seo-react";;
 
    function App() {
      const meta: MetaTags = {
@@ -189,7 +189,7 @@ bucky-seo-react works in any React setup that supports ES Modules and can inject
 
    ```jsx
    import React from "react";
-   import { DynamicHead, videoObject } from "bucky-seo-react";
+   import { DynamicHead, videoObject } from "@osdeibi/bucky-seo-react";;
 
    export default function App() {
      const meta = {
@@ -289,7 +289,7 @@ export function DynamicHead(props: {
 ## 🧩 Built-in Schema Generators
 
 ```ts
-import { videoObject } from "bucky-seo-react/schemas/VideoObject";
+import { videoObject } from "@osdeibi/bucky-seo-react/schemas/VideoObject";
 ```
 
 Use in `structuredData`:
@@ -403,8 +403,8 @@ bucky-seo-react works in any React setup that supports ES Modules and can inject
 
    ```tsx
    import React from "react";
-   import { DynamicHead, videoObject } from "bucky-seo-react";
-   import type { MetaTags, StructuredData } from "bucky-seo-react";
+   import { DynamicHead, videoObject } from "@osdeibi/bucky-seo-react";;
+   import type { MetaTags, StructuredData } from "@osdeibi/bucky-seo-react";;
 
    function App() {
      const meta: MetaTags = {
@@ -539,7 +539,7 @@ bucky-seo-react works in any React setup that supports ES Modules and can inject
 
    ```jsx
    import React from "react";
-   import { DynamicHead, videoObject } from "bucky-seo-react";
+   import { DynamicHead, videoObject } from "@osdeibi/bucky-seo-react";;
 
    export default function App() {
      const meta = {
@@ -639,7 +639,7 @@ export function DynamicHead(props: {
 ## 🧩 Built-in Schema Generators
 
 ```ts
-import { videoObject } from "bucky-seo-react/schemas/VideoObject";
+import { videoObject } from "@osdeibi/bucky-seo-react/schemas/VideoObject";
 ```
 
 Use in `structuredData`:
@@ -701,10 +701,10 @@ Use the corresponding schema-helpers in `bucky-seo-react/schemas/…` to generat
 Import and pass your JSON-LD array to `<DynamicHead />`. Below are minimal snippets you can copy into your README.
 
 ```tsx
-import { DynamicHead } from "bucky-seo-react";
+import { DynamicHead } from "@osdeibi/bucky-seo-react";;
 
 // 1. VideoObject
-import { videoObject } from "bucky-seo-react/schemas/VideoObject";
+import { videoObject } from "@osdeibi/bucky-seo-react/schemas/VideoObject";
 const sd1 = [
   videoObject({
     name: "Demo Video",
@@ -714,7 +714,7 @@ const sd1 = [
 ];
 
 // 2. VacationRental
-import { vacationRental } from "bucky-seo-react/schemas/VacationRental";
+import { vacationRental } from "@osdeibi/bucky-seo-react/schemas/VacationRental";
 const sd2 = [
   vacationRental({
     name: "Sunny Beach House",
@@ -730,7 +730,7 @@ const sd2 = [
 ];
 
 // 3. PaywalledContent
-import { paywalledContent } from "bucky-seo-react/schemas/PaywalledContent";
+import { paywalledContent } from "@osdeibi/bucky-seo-react/schemas/PaywalledContent";
 const sd3 = [
   paywalledContent({
     name:"Premium Article",
@@ -743,13 +743,13 @@ const sd3 = [
 ];
 
 // 4. Speakable
-import { speakable } from "bucky-seo-react/schemas/Speakable";
+import { speakable } from "@osdeibi/bucky-seo-react/schemas/Speakable";
 const sd4 = [
   speakable({ xpaths:["/html/head/title","/html/body//h1"] })
 ];
 
 // 5. SoftwareApplication
-import { softwareApplication } from "bucky-seo-react/schemas/SoftwareApplication";
+import { softwareApplication } from "@osdeibi/bucky-seo-react/schemas/SoftwareApplication";
 const sd5 = [
   softwareApplication({
     name:"My App",
@@ -760,7 +760,7 @@ const sd5 = [
 ];
 
 // 6. ReviewSnippet
-import { reviewSnippet } from "bucky-seo-react/schemas/ReviewSnippet";
+import { reviewSnippet } from "@osdeibi/bucky-seo-react/schemas/ReviewSnippet";
 const sd6 = [
   reviewSnippet({
     itemReviewed:{ "@type":"Product", name:"Widget" },
@@ -770,7 +770,7 @@ const sd6 = [
 ];
 
 // 7. Recipe
-import { recipe } from "bucky-seo-react/schemas/Recipe";
+import { recipe } from "@osdeibi/bucky-seo-react/schemas/Recipe";
 const sd7 = [
   recipe({
     name:"Pancakes",
@@ -781,7 +781,7 @@ const sd7 = [
 ];
 
 // 8. QAPage
-import { qaPage } from "bucky-seo-react/schemas/QAPage";
+import { qaPage } from "@osdeibi/bucky-seo-react/schemas/QAPage";
 const sd8 = [
   qaPage({
     mainEntity:{
@@ -793,7 +793,7 @@ const sd8 = [
 ];
 
 // 9. ProfilePage
-import { profilePage } from "bucky-seo-react/schemas/ProfilePage";
+import { profilePage } from "@osdeibi/bucky-seo-react/schemas/ProfilePage";
 const sd9 = [
   profilePage({
     mainEntity:{ "@type":"Person", name:"Jane Doe", url:"https://example.com/janedoe" }
@@ -801,7 +801,7 @@ const sd9 = [
 ];
 
 // 10. Product
-import { product } from "bucky-seo-react/schemas/Product";
+import { product } from "@osdeibi/bucky-seo-react/schemas/Product";
 const sd10 = [
   product({
     name:"Gadget",
@@ -811,7 +811,7 @@ const sd10 = [
 ];
 
 // 11. Quiz (Practice Problem)
-import { quiz } from "bucky-seo-react/schemas/Quiz";
+import { quiz } from "@osdeibi/bucky-seo-react/schemas/Quiz";
 const sd11 = [
   quiz({
     hasPart:[
@@ -828,7 +828,7 @@ const sd11 = [
 ];
 
 // 12. Organization
-import { organization } from "bucky-seo-react/schemas/Organization";
+import { organization } from "@osdeibi/bucky-seo-react/schemas/Organization";
 const sd12 = [
   organization({
     name:"Acme Corp",
@@ -838,7 +838,7 @@ const sd12 = [
 ];
 
 // 13. Movie
-import { movie } from "bucky-seo-react/schemas/Movie";
+import { movie } from "@osdeibi/bucky-seo-react/schemas/Movie";
 const sd13 = [
   movie({
     name:"Inception",
@@ -848,7 +848,7 @@ const sd13 = [
 ];
 
 // 14. MathSolver
-import { mathSolver } from "bucky-seo-react/schemas/MathSolver";
+import { mathSolver } from "@osdeibi/bucky-seo-react/schemas/MathSolver";
 const sd14 = [
   mathSolver({
     url:"https://example.com/solve",
@@ -859,7 +859,7 @@ const sd14 = [
 ];
 
 // 15. LocalBusiness
-import { localBusiness } from "bucky-seo-react/schemas/LocalBusiness";
+import { localBusiness } from "@osdeibi/bucky-seo-react/schemas/LocalBusiness";
 const sd15 = [
   localBusiness({
     name:"Corner Café",
@@ -873,7 +873,7 @@ const sd15 = [
 ];
 
 // 16. JobPosting
-import { jobPosting } from "bucky-seo-react/schemas/JobPosting";
+import { jobPosting } from "@osdeibi/bucky-seo-react/schemas/JobPosting";
 const sd16 = [
   jobPosting({
     title:"Developer",
@@ -893,7 +893,7 @@ const sd16 = [
 ];
 
 // 17. ImageObject
-import { imageObject } from "bucky-seo-react/schemas/ImageObject";
+import { imageObject } from "@osdeibi/bucky-seo-react/schemas/ImageObject";
 const sd17 = [
   imageObject({
     contentUrl:"https://example.com/photo.jpg",
@@ -903,7 +903,7 @@ const sd17 = [
 ];
 
 // 18. FaqPage
-import { faqPage } from "bucky-seo-react/schemas/FaqPage";
+import { faqPage } from "@osdeibi/bucky-seo-react/schemas/FaqPage";
 const sd18 = [
   faqPage({
     mainEntity:[
@@ -917,7 +917,7 @@ const sd18 = [
 ];
 
 // 19. Event
-import { event } from "bucky-seo-react/schemas/Event";
+import { event } from "@osdeibi/bucky-seo-react/schemas/Event";
 const sd19 = [
   event({
     name:"Concert",
@@ -927,7 +927,7 @@ const sd19 = [
 ]
 
 // 20. EmployerAggregateRating
-import { employerAggregateRating } from "bucky-seo-react/schemas/EmployerAggregateRating";
+import { employerAggregateRating } from "@osdeibi/bucky-seo-react/schemas/EmployerAggregateRating";
 const sd20 = [
   employerAggregateRating({
     employer:{ "@type":"Organization", name:"Acme Corp" },
@@ -936,7 +936,7 @@ const sd20 = [
 ];
 
 // 21. EducationQAPage
-import { educationQAPage } from "bucky-seo-react/schemas/EducationQAPage";
+import { educationQAPage } from "@osdeibi/bucky-seo-react/schemas/EducationQAPage";
 const sd21 = [
   educationQAPage({
     mainEntity:{
@@ -948,7 +948,7 @@ const sd21 = [
 ];
 
 // 22. DiscussionForumPosting
-import { discussionForumPosting } from "bucky-seo-react/schemas/DiscussionForumPosting";
+import { discussionForumPosting } from "@osdeibi/bucky-seo-react/schemas/DiscussionForumPosting";
 const sd22 = [
   discussionForumPosting({
     headline:"SEO tips?",
@@ -959,7 +959,7 @@ const sd22 = [
 ];
 
 // 23. Dataset
-import { dataset } from "bucky-seo-react/schemas/Dataset";
+import { dataset } from "@osdeibi/bucky-seo-react/schemas/Dataset";
 const sd23 = [
   dataset({
     name:"Sample Data",
@@ -968,7 +968,7 @@ const sd23 = [
 ];
 
 // 24. Course
-import { course } from "bucky-seo-react/schemas/Course";
+import { course } from "@osdeibi/bucky-seo-react/schemas/Course";
 const sd24 = [
   course({
     name:"Solar 101",
@@ -977,7 +977,7 @@ const sd24 = [
 ];
 
 // 25. Carousel
-import { carousel } from "bucky-seo-react/schemas/Carousel";
+import { carousel } from "@osdeibi/bucky-seo-react/schemas/Carousel";
 const sd25 = [
   carousel({
     items:[
@@ -988,7 +988,7 @@ const sd25 = [
 ];
 
 // 26. BreadcrumbList
-import { breadcrumbList } from "bucky-seo-react/schemas/Breadcrumb";
+import { breadcrumbList } from "@osdeibi/bucky-seo-react/schemas/Breadcrumb";
 const sd26 = [
   breadcrumbList({
     itemListElement:[
@@ -999,7 +999,7 @@ const sd26 = [
 ];
 
 // 27. Article
-import { article } from "bucky-seo-react/schemas/Article";
+import { article } from "@osdeibi/bucky-seo-react/schemas/Article";
 const sd27 = [
   article({
     articleType:"NewsArticle",
