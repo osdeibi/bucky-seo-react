@@ -1,5 +1,3 @@
-// src/DynamicHead.types.ts
-
 export interface MetaTags {
   title?: string;
   description?: string;

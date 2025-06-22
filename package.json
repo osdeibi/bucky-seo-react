@@ -1,5 +1,5 @@
 {
-  "name": "bucky-seo-react",
+  "name": "@osdeibi/bucky-seo-react",
   "version": "1.0.0",
   "description": "React component for managing meta tags, Open Graph, and dynamic JSON-LD",
   "type": "module",
